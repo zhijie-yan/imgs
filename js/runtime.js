@@ -18,7 +18,7 @@ function createtime() {
     b = Math.round(g);
   1 == String(b).length && (b = "0" + b);
   let c = "";
-  c = s < 18 && s >= 9 ? `<img class='boardsign' src='https://static-2w2.pages.dev/svg/工作.svg' title='什么时候能够实现财富自由呀~'>努力搬砖中～<br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</div>` : `<img class='boardsign' src='https://static-2w2.pages.dev/svg/娱乐.svg' title='下班了就该开开心心地玩耍~'>下班了就愉快的玩耍吧～<br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</div>`, document.getElementById("workboard") && (document.getElementById("workboard").innerHTML = c)
+  c = s < 18 && s >= 9 ? `<img class='boardsign' src='https://static-2w2.pages.dev/svg/工作.svg' title='什么时候能够实现财富自由呀~' width="13" height="13">努力搬砖中～<br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</div>` : `<img class='boardsign' src='https://static-2w2.pages.dev/svg/娱乐.svg' title='下班了就该开开心心地玩耍~' width="13" height="13">下班了就愉快的玩耍吧～<br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</div>`, document.getElementById("workboard") && (document.getElementById("workboard").innerHTML = c)
 }
 setInterval((() => {
   createtime()
